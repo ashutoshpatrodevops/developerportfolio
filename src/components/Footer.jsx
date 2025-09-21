@@ -26,10 +26,9 @@ const Footer = () => {
           {/* Social Icons */}
           <div className="flex space-x-6">
             {[
-              { href: 'https://github.com/your-github', Icon: Github },
-              { href: 'https://linkedin.com/in/your-linkedin', Icon: Linkedin },
-              { href: 'https://twitter.com/your-twitter', Icon: Twitter },
-              { href: 'mailto:your-email@example.com', Icon: Mail }
+              { href: 'https://github.com/ashutoshpatrodevops', Icon: Github },
+              { href: 'www.linkedin.com/in/ashutosh-patro-2054b7239', Icon: Linkedin },
+              { href: 'https://x.com/CoderAshu', Icon: Twitter },
             ].map(({ href, Icon }, idx) => (
               <a
                 key={idx}

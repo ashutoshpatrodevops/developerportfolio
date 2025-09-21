@@ -55,7 +55,7 @@ const Header = () => {
               Contact
             </a>
             <a
-              href="#blogs"
+              href="https://techpulsearticles.vercel.app"
               className="relative text-gray-800 dark:text-gray-200 font-medium transition-all after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[2px] after:bg-pink-400 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
             >
               Blogs

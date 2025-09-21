@@ -15,13 +15,14 @@ const Home = () => {
       <div className="text-center md:text-left max-w-2xl">
         <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-white mb-6 leading-tight">
           Hi, I'm{" "}
+          <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
             Ashutosh Patro
           </span>
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-medium text-gray-600 dark:text-gray-300 mb-6">
-          I build things for the web & cloud
+          Building scalable solutions with code & creativity.
         </h2>
 
         <div className="text-2xl md:text-3xl font-semibold text-gray-700 dark:text-gray-200 min-h-[4rem] flex items-center justify-center md:justify-start mb-8">
@@ -31,9 +32,7 @@ const Home = () => {
                 "Building Scalable Systems",
                 "A DevOps Enthusiast",
                 "A MERN Stack Developer",
-                "An Open Source Enthusiast",
                 "A Coder",
-                "Cloud Expert",
               ],
               autoStart: true,
               loop: true,
@@ -47,8 +46,8 @@ const Home = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-6 mt-8">
           {/* Download CV Button */}
           <a
-            href="/Ashutosh_Patro_CV.pdf"
-            download="Ashutosh_Patro_CV.pdf"
+            href="https://drive.google.com/file/d/10paMCA8MAucn0JrXZTAt8252hGVrJPok/view?usp=sharing"
+            download="AshutoshFinal.pdf"
             className="px-8 py-3 flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl shadow-lg hover:shadow-xl hover:from-purple-600 hover:to-pink-600 transition-all duration-300 text-lg font-medium"
           >
             <FaFileDownload />
@@ -58,7 +57,7 @@ const Home = () => {
           {/* Social Icons */}
           <div className="flex gap-6 mt-4 sm:mt-0">
             <a
-              href="https://github.com/your-github-profile"
+              href="https://github.com/ashutoshpatrodevops"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:text-purple-500 hover:shadow-xl transition-all duration-300"
@@ -67,7 +66,7 @@ const Home = () => {
               <FaGithub className="text-2xl" />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin-profile"
+              href="www.linkedin.com/in/ashutosh-patro-2054b7239"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:text-purple-500 hover:shadow-xl transition-all duration-300"
@@ -76,7 +75,7 @@ const Home = () => {
               <FaLinkedinIn className="text-2xl" />
             </a>
             <a
-              href="https://medium.com/in/your-linkedin-profile"
+              href="https://x.com/CoderAshu"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:text-purple-500 hover:shadow-xl transition-all duration-300"

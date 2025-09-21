@@ -15,82 +15,96 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "TravelGeeks",
       category: "fullstack",
-      description: "A complete e-commerce solution with user authentication, payment integration, and admin dashboard.",
-      longDescription: "Full-featured e-commerce platform with user registration, product catalog, shopping cart, secure payments via Stripe, order management",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "AWS"],
+      description: "A complete full stack solution with user authentication, maps integration, and admin dashboard.",
+      longDescription: "Full-featured travel assistant platform with user registration, product catalog, secure payments via Stripe(Coming soon), order management",
+      technologies: ["EJS", "Node.js", "MongoDB", "Express", "Leaflet"],
       image: "/api/placeholder/400/250",
-      demoUrl: "https://demo-ecommerce.com",
-      githubUrl: "https://github.com/username/ecommerce",
+      demoUrl: "https://travelgeeks.onrender.com/listings",
+      githubUrl: "https://github.com/ashutoshpatrodevops/travelgeeks",
       status: "Completed",
       gradient: "from-blue-500 to-purple-600"
     },
     {
-      id: 2,
-      title: "Task Management App",
-      category: "frontend",
-      description: "A productivity app with drag-and-drop functionality, real-time collaboration, and intuitive design.",
-      longDescription: "Modern task management app with kanban boards, chat, file sharing, and deadline tracking.",
-      technologies: ["React", "Next.js", "CSS", "JavaScript"],
-      image: "/api/placeholder/400/250",
-      demoUrl: "https://demo-tasks.com",
-      githubUrl: "https://github.com/username/task-app",
-      status: "In Progress",
-      gradient: "from-green-500 to-teal-600"
-    },
+  id: 2,
+  title: "TechPulse",
+  category: "Full Stack",
+  description: "A personalized blog platform for creating, reading, and sharing posts.",
+  longDescription: "TechPulse is a modern full-stack blog platform built with the MERN stack. It features full CRUD functionality for blogs, comments, and user accounts, with authentication, a responsive design, and a smooth user experience.",
+  technologies: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS"],
+  image: "/api/placeholder/400/250",
+  demoUrl: "https://techpulsearticles.vercel.app",   // replace with your actual deployed link
+  githubUrl: "https://github.com/ashutoshpatrodevops/techpulse", // replace with your actual repo
+  status: "Completed",
+  gradient: "from-purple-500 to-pink-600"
+},
     {
-      id: 3,
-      title: "API Gateway Service",
-      category: "backend",
-      description: "Microservices architecture with API gateway, authentication, and logging.",
-      longDescription: "Scalable API gateway with JWT authentication, rate limiting, logging, and transformation support.",
-      technologies: ["Node.js", "Express", "Docker", "AWS", "MongoDB"],
-      image: "/api/placeholder/400/250",
-      demoUrl: "https://api-demo.com",
-      githubUrl: "https://github.com/username/api-gateway",
-      status: "Completed",
-      gradient: "from-orange-500 to-red-600"
-    },
+  id: 3,
+  title: "MuseMate",
+  category: "Full Stack",
+  description: "Museum ticket booking platform with real-time features.",
+  longDescription: "MuseMate is a full-stack web application for seamless museum ticket booking. It includes user authentication, responsive glassmorphic design, booking management, reviews, watchlists, dashboards, and upcoming real-time payment integration. Built with Tailwind CSS and EJS for a modern yet simple user experience.",
+  technologies: ["MongoDB", "Express.js", "Node.js", "EJS", "Tailwind CSS"],
+  image: "/api/placeholder/400/250",
+  demoUrl: "https://musemate-demo.com", // replace with actual deployed link
+  githubUrl: "https://github.com/username/musemate", // replace with your repo link
+  status: "In Progress",
+  gradient: "from-blue-500 to-indigo-600"
+},
+   {
+  id: 4,
+  title: "VectorApex",
+  category: "Full Stack",
+  description: "Stock trading and investment platform with a modern UI.",
+  longDescription: "VectorApex is a Zerodha-inspired stock trading platform that enables users to manage investments seamlessly. It includes features like user authentication, real-time market data visualization, portfolio management, trade execution, and analytics dashboards. Built with a focus on performance, scalability, and a sleek, intuitive interface.",
+  technologies: ["MongoDB", "Express.js", "React", "Node.js", "Chart.js"],
+  image: "/api/placeholder/400/250",
+  demoUrl: "inprogress", // replace with actual deployed link
+  githubUrl: "inprogress", // replace with your repo link
+  status: "In Progress",
+  gradient: "from-emerald-500 to-teal-600"
+}
+,
     {
-      id: 4,
-      title: "Social Media Dashboard",
-      category: "fullstack",
-      description: "Analytics dashboard with scheduling, insights, and real-time visualizations.",
-      longDescription: "Social media tool for post scheduling, engagement tracking, and competitor analytics.",
-      technologies: ["React", "Node.js", "Google Cloud", "Next.js", "CSS"],
-      image: "/api/placeholder/400/250",
-      demoUrl: "https://social-dashboard.com",
-      githubUrl: "https://github.com/username/social-dashboard",
-      status: "Completed",
-      gradient: "from-purple-500 to-pink-600"
-    },
-    {
-      id: 5,
-      title: "Weather Forecast App",
-      category: "mobile",
-      description: "Cross-platform mobile app providing accurate forecasts with animations.",
-      longDescription: "Weather app with 7-day forecasts, location tracking, maps, and beautiful animations.",
-      technologies: ["React", "JavaScript", "CSS"],
-      image: "/api/placeholder/400/250",
-      demoUrl: "https://weather-app.com",
-      githubUrl: "https://github.com/username/weather-app",
-      status: "Completed",
-      gradient: "from-cyan-500 to-blue-600"
-    },
-    {
-      id: 6,
-      title: "Learning Management System",
-      category: "fullstack",
-      description: "Educational platform with progress tracking, quizzes, and video streaming.",
-      longDescription: "LMS with course management, discussion forums, video content, and certification.",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Express", "Docker"],
-      image: "/api/placeholder/400/250",
-      demoUrl: "https://lms-demo.com",
-      githubUrl: "https://github.com/username/lms",
-      status: "In Progress",
-      gradient: "from-indigo-500 to-purple-600"
-    }
+  id: 5,
+  title: "Connexus",
+  category: "Full Stack",
+  description: "A modern networking platform to connect people and ideas.",
+  longDescription: "Connexus is a full-stack social networking platform designed to help users connect, collaborate, and share content seamlessly. It features user authentication, profile customization, posts with media support, real-time chat, and community building tools. Built with scalability in mind, Connexus integrates responsive design, secure APIs, and real-time communication for a smooth user experience.",
+  technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS"],
+  image: "in progress",
+  demoUrl: "in progress", // replace with actual deployed link
+  githubUrl: "https://github.com/username/connexus", // replace with your repo link
+  status: "In Progress",
+  gradient: "from-pink-500 to-rose-600"
+},
+  {
+  id: 6,
+  title: "Face recognition System",
+  category: "AI/Machine Learning",
+  description: "A modern Attendance management system built for seamless data management",
+  longDescription: "Educational Institution can use this softwares",
+  technologies: ["React", "Node.js", "Express.js", "MongoDB", "Socket.io", "Tailwind CSS"],
+  image: "completed",
+  demoUrl: "completed", // replace with actual deployed link
+  githubUrl: "completed", // replace with your repo link
+  status: "In Progress",
+  gradient: "from-pink-500 to-rose-600"
+},
+{
+  id: 7,
+  title: "Weatherly",
+  category: "Frontend",
+  description: "smart weather management system that predicts weather for today as well as forecast 5 days data",
+  longDescription: "Weatherly is a versatile weather aplication",
+  technologies: ["React","Tailwind CSS", "Weather API"],
+  image: "completed",
+  demoUrl: "completed", // replace with actual deployed link
+  githubUrl: "completed", // replace with your repo link
+  status: "In Progress",
+  gradient: "from-pink-500 to-rose-600"
+}
   ];
 
   const filteredProjects = selectedCategory === 'all'
@@ -220,15 +234,17 @@ const Projects = () => {
               These projects represent just a glimpse of what I can create. Let's discuss how I can help bring your ideas to life with cutting-edge technology and clean, efficient code.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
-                <Github className="w-5 h-5 mr-2" />
-                View All on GitHub
-              </button>
-              <button className="flex items-center justify-center px-8 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-full font-semibold hover:border-gray-900 dark:hover:border-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-all duration-300">
-                <Monitor className="w-5 h-5 mr-2" />
-                Let's Collaborate
-              </button>
-            </div>
+  <a
+    href="https://github.com/ashutoshpatrodevops" 
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center justify-center px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+  >
+    <Github className="w-5 h-5 mr-2" />
+    View All on GitHub
+  </a>
+</div>
+
           </div>
         </div>
       </div>

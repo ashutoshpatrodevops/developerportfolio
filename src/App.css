@@ -1,4 +1,7 @@
 @import "tailwindcss";
+*{
+  font-family: "poppins";
+}
 body{
     color: black;
     height:0;

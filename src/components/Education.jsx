@@ -90,7 +90,7 @@ const Education = () => {
       coursework: [
         "Advanced Algorithms", "Machine Learning", "Deep Learning", "Data structures", "Python", "Object Oriented Programming", "Image Processing Techniques", "Operating System", "Computer Organization and Architecture"
       ],
-      achievements: ["Top 10 In 2022 batch", "Core member of NIST Data Science Club"],
+      achievements: ["Top 10 In 2022 batch", "Core member of NIST Data Science Club","GDG DevOps Lead'25"],
     },
     {
       id: 2,

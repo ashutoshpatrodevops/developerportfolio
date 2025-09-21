@@ -51,7 +51,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <section class="w-full overflow-hidden">
+      <section className="w-full overflow-hidden">
   <div id="scroller">
                 <div id="scroller-in">
                    <h4>#Web Developement</h4>

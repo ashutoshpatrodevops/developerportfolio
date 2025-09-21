@@ -16,9 +16,9 @@ const Skills = () => {
       color: "bg-gradient-to-r from-blue-400 to-yellow-500",
       skills: [
         { name: "Java", level: 90, description: "Data Structures and Algorithms" },
-        { name: "C", level: 75, description: "Scalable Systems" },
-        { name: "Python", level: 80, description: "Versatile Programming" },
-        { name: "JavaScript", level: 80, description: "For website Logics" },
+        { name: "C", level: 75, description: "Data Structures and Algorithms" },
+        { name: "Python", level: 80, description: "Machine Learning" },
+        { name: "JavaScript", level: 80, description: "For website Logics and Servers" },
       ]
     },
     {
@@ -26,8 +26,8 @@ const Skills = () => {
       icon: <Globe className="w-6 h-6 text-white" />,
       color: "bg-gradient-to-r from-blue-400 to-cyan-500",
       skills: [
-        { name: "React", level: 90, description: "Component-based UI development" },
-        { name: "Next.js", level: 85, description: "Full-stack React framework" },
+        { name: "React", level: 80, description: "Component-based UI development" },
+        { name: "Next.js", level: 80, description: "Full-stack React framework" },
         { name: "JavaScript", level: 88, description: "Modern ES6+ development" },
         { name: "CSS", level: 82, description: "Responsive design & animations" }
       ]
@@ -39,7 +39,6 @@ const Skills = () => {
       skills: [
         { name: "Node.js", level: 87, description: "Server-side JavaScript runtime" },
         { name: "Express", level: 85, description: "JS based Web application framework" },
-        { name: "Flask", level: 70, description: "Python Based Web application framework" },
       ]
     },
     {
@@ -56,9 +55,10 @@ const Skills = () => {
       icon: <Cloud className="w-6 h-6 text-white" />,
       color: "bg-gradient-to-r from-orange-400 to-red-500",
       skills: [
-        { name: "AWS", level: 78, description: "Amazon Web Services" },
-        { name: "Google Cloud", level: 75, description: "Google Cloud Platform" },
-        { name: "Docker", level: 80, description: "Containerization platform" }
+        { name: "AWS", level: 60, description: "Amazon Web Services" },
+        { name: "Google Cloud", level: 70, description: "Google Cloud Platform" },
+        { name: "Docker", level: 80, description: "Containerization platform" },
+        { name: "Kubernetes", level: 60, description: "Containerization orchestration" }
       ]
     },
   ];

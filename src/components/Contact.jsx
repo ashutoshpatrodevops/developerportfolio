@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { Mail, Send, User, MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import programming from "../assets/programming.png";
+import programming from "../assets/contact.svg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });

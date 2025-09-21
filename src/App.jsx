@@ -12,7 +12,7 @@ import Projects from "./components/Project"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import Loader from "./components/loader"
-import { Analytics } from "@vercel/analytics/next"
+
 function App() {
   const [loading, setLoading] = useState(true);
   const [showLoader, setShowLoader] = useState(true);
