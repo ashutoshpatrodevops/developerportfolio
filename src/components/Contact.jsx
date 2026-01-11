@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import Lottie from 'lottie-react';
 import { Mail, Send, User, MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import programming from "../assets/contact.svg";
+import animationData from '../assets/developer skills.json'; // Import your Lottie JSON file
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isLoading, setIsLoading] = useState(false);
   const [status, setStatus] = useState({ type: '', message: '' });
-  const [sphereRotation, setSphereRotation] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => setSphereRotation(prev => prev + 0.5), 50);
-    return () => clearInterval(interval);
-  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -68,23 +63,24 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className="py-6 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-black min-h-screen transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-2 lg:px-8">
+    <section id='contact' className="py-20 bg-white dark:bg-black min-h-screen transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 rounded-full mb-6 shadow-lg">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl mb-6 shadow-lg">
             <Mail className="w-8 h-8 text-white" />
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">Get In Touch</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Have a project in mind or want to collaborate? I'd love to hear from you.
             Let's create something amazing together!
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-700">
+          {/* Contact Form */}
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl border border-gray-100 dark:border-gray-700">
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center">
-              <MessageCircle className="w-6 h-6 mr-3 text-blue-600" />
+              <MessageCircle className="w-6 h-6 mr-3 text-purple-600" />
               Send me a message
             </h3>
 
@@ -101,7 +97,7 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="Enter your full name"
                     required
                   />
@@ -120,7 +116,7 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white"
                     placeholder="Enter your email address"
                     required
                   />
@@ -139,7 +135,8 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows="5"
-                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white resize-none"
+                    maxLength="500"
+                    className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white resize-none"
                     placeholder="Tell me about your project or just say hello..."
                     required
                   />
@@ -150,10 +147,10 @@ const Contact = () => {
               </div>
 
               {status.message && (
-                <div className={`flex items-center p-4 rounded-lg ${
+                <div className={`flex items-center p-4 rounded-xl ${
                   status.type === 'success'
-                    ? 'bg-green-50 dark:bg-green-900 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-700'
-                    : 'bg-red-50 dark:bg-red-900 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-700'
+                    ? 'bg-green-50 dark:bg-green-900/30 text-green-800 dark:text-green-200 border border-green-200 dark:border-green-700'
+                    : 'bg-red-50 dark:bg-red-900/30 text-red-800 dark:text-red-200 border border-red-200 dark:border-red-700'
                 }`}>
                   {status.type === 'success' ? (
                     <CheckCircle className="w-5 h-5 mr-3 flex-shrink-0" />
@@ -167,7 +164,7 @@ const Contact = () => {
               <button
                 onClick={handleSubmit}
                 disabled={isLoading}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 px-6 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
               >
                 {isLoading ? (
                   <>
@@ -182,12 +179,16 @@ const Contact = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center h-full min-h-[600px]">
-            <img 
-              src={programming}
-              alt="My Tech Universe"
-              className="max-w-full h-auto rounded-xl dark:brightness-90"
-            />
+          {/* Lottie Animation */}
+          <div className="flex items-center justify-center h-full">
+            <div className="w-full max-w-lg">
+              <Lottie 
+                animationData={animationData}
+                loop={true}
+                autoplay={true}
+                className="w-full h-auto"
+              />
+            </div>
           </div>
         </div>
       </div>

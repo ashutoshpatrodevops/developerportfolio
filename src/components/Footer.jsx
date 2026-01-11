@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
-
+import { FaXTwitter } from "react-icons/fa6";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-r from-purple-50 via-pink-50 to-blue-50 dark:from-[#0f0f23] dark:via-[#1b1b32] dark:to-[#0f0f23] shadow-2xl border border-purple-200/30 dark:border-purple-800/40 rounded-3xl mx-4 my-8 px-3 py-3 max-w-7xl mx-auto backdrop-blur-sm">
@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="flex space-x-6">
             {[
               { href: 'https://github.com/ashutoshpatrodevops', Icon: Github },
-              { href: 'www.linkedin.com/in/ashutosh-patro-2054b7239', Icon: Linkedin },
-              { href: 'https://x.com/CoderAshu', Icon: Twitter },
+              { href: 'https://www.linkedin.com/in/ashutosh-patro-2054b7239', Icon: Linkedin },
+              { href: 'https://x.com/CoderAshu', Icon: FaXTwitter },
             ].map(({ href, Icon }, idx) => (
               <a
                 key={idx}
@@ -44,7 +44,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="flex items-center gap-2 text-gray-500 dark:text-gray-400 text-sm">
-            <span>© 2025 All Rights Reserved</span>
+            <span>© 2026 All Rights Reserved</span>
           </div>
         </div>
 

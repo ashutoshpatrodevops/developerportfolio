@@ -11,7 +11,7 @@ import Skills from "./components/Skills"
 import Projects from "./components/Project"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import Loader from "./components/loader"
+// import Loader from "./components/loader"
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -49,9 +49,6 @@ function App() {
 
   return (
     <>
-      {showLoader && <Loader isVisible={loading} />}
-      
-      <div className={`transition-opacity duration-700 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <Header />
         <Home />
         <About />
@@ -60,7 +57,6 @@ function App() {
         <Projects />
         <Contact />
         <Footer />
-      </div>
     </>
   );
 };
