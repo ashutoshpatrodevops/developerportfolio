@@ -21,15 +21,24 @@ const Home = () => {
         <div className={`text-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           
           {/* Greeting Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 bg-white dark:bg-gray-800 backdrop-blur-sm rounded-full border border-purple-200 dark:border-purple-800 shadow-md">
+          {/* Greeting Badge - Live Project Link */}
+          <a
+            href="https://kermedix.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-4 py-2 mb-8 bg-white/80 dark:bg-gray-900/50 backdrop-blur-md rounded-full border border-emerald-500/30 dark:border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.1)] hover:shadow-[0_0_20px_rgba(16,185,129,0.2)] hover:scale-105 transition-all duration-300 group cursor-pointer"
+          >
             <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
             </span>
-            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-              Kermedix(Launching soon)
+            <span className="text-sm font-semibold text-gray-700 dark:text-gray-200 flex items-center gap-2">
+              Kermedix is Live
+              <span className="text-emerald-500 group-hover:translate-x-1 transition-transform duration-300">
+                →
+              </span>
             </span>
-          </div>
+          </a>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-800 dark:text-white mb-4 leading-tight">
             Hi, I'm{" "}

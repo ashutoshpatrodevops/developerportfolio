@@ -10,6 +10,7 @@ import Education from "./components/Education"
 import Skills from "./components/Skills"
 import Projects from "./components/Project"
 import Contact from "./components/Contact"
+// import GitHubStreak from './components/GitHubStreak';
 import Footer from "./components/Footer"
 // import Loader from "./components/loader"
 
@@ -52,6 +53,7 @@ function App() {
         <Header />
         <Home />
         <About />
+        {/* <GitHubStreak/> */}
         <Education />
         <Skills />
         <Projects />
